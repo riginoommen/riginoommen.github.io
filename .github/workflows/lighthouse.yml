@@ -18,7 +18,7 @@ jobs:
       #     wp-env start
       - name: Run Lighthouse CI
         run: |
-          lhci collect --url=http://localhost:8888 --numberOfRuns=1 --silent
+          lhci collect --url=http://riginoommen.github.io --numberOfRuns=1
       - name: Upload Artifact to Lighthouse CI Server
         run: |
           lhci upload
