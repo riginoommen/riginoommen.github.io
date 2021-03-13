@@ -13,9 +13,9 @@ jobs:
       - name: Install @lhci/cli and @wordpress/env
         run: |
           npm install -g @lhci/cli@0.5.x @wordpress/env
-      - name: Run local server on port 8888
-        run: |
-          wp-env start
+      # - name: Run local server on port 8888
+      #   run: |
+      #     wp-env start
       - name: Run Lighthouse CI
         run: |
           lhci collect --url=http://localhost:8888 --numberOfRuns=1 --silent
